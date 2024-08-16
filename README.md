@@ -1,7 +1,7 @@
 # Frontend Mentor - Interactive rating component
 
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
-
+## Live site URL - https://matt2282.github.io/Interactive-rating-component/
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
