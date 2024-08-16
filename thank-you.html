@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script>
+       document.addEventListener("DOMContentLoaded",() => {
+        var rating = document.getElementById("rating");
+        var currentSelectionID = localStorage.getItem("buttonID");
+        if (rating && currentSelectionID) {
+          rating.innerHTML = mapID(currentSelectionID);
+        }});
+       
+
+        function mapID(buttonID) {
+        const map = new Map();
+        map.set("one", 1);
+        map.set("two", 2);
+        map.set("three", 3);
+        map.set("four", 4);
+        map.set("five", 5);
+        return map.get(buttonID);
+      }
+    
+    </script>
+    <div class="container" style="align-items: center">
+      <img src="images/illustration-thank-you.svg" alt="thank you recipt" />
+      <button id="selected">
+        You selected <span id="rating"></span> out of 5
+      </button>
+      <h1>Thank you!</h1>
+      <p style="text-align: center;">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </p>
+    </div>
+  </body>
+</html>
+       
